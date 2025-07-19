@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags for SEO -->
+    <title>Contact Us - Your Blog Name</title>
+    <meta name="description" content="Get in touch with Your Blog Name for inquiries, collaborations, or support. Reach out to us via email or our contact form.">
+    <meta name="keywords" content="contact, contact us, get in touch, email, support, inquiry, collaboration, [Your Blog Name]">
+
+    <!-- Open Graph / Facebook Meta Tags for Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/your-blog-repo/contact.html">
+    <meta property="og:title" content="Contact Us - Your Blog Name">
+    <meta property="og:description" content="Get in touch with Your Blog Name for inquiries, collaborations, or support. Reach out to us via email or our contact form.">
+    <meta property="og:image" content="https://placehold.co/1200x630/4A90E2/FFFFFF?text=Contact+Us"> <!-- Replace with your actual contact page image URL -->
+
+    <!-- Twitter Meta Tags for Social Sharing -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourusername.github.io/your-blog-repo/contact.html">
+    <meta property="twitter:title" content="Contact Us - Your Blog Name">
+    <meta property="twitter:description" content="Get in touch with Your Blog Name for inquiries, collaborations, or support. Reach out to us via email or our contact form.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/4A90E2/FFFFFF?text=Contact+Us"> <!-- Replace with your actual contact page image URL -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/007BFF/FFFFFF?text=C" type="image/x-icon"> <!-- Replace with your actual favicon -->
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind's slate-50 */
+            color: #1e293b; /* Tailwind's slate-800 */
+        }
+        /* Custom styles for form elements */
+        .form-input {
+            @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+        }
+        .form-textarea {
+            @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 h-32 resize-y;
+        }
+        .form-button {
+            @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-colors duration-300;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold rounded-md px-3 py-1 hover:bg-blue-700 transition-colors">Your Blog Name</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-blue-200 transition-colors rounded-md px-3 py-1 hover:bg-blue-700">Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-200 transition-colors rounded-md px-3 py-1 hover:bg-blue-700">About</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-200 transition-colors rounded-md px-3 py-1 hover:bg-blue-700">Contact</a></li>
+                    <li><a href="blog-post-example.html" class="hover:text-blue-200 transition-colors rounded-md px-3 py-1 hover:bg-blue-700">Blog Example</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+        <article class="bg-white p-6 md:p-8 rounded-lg shadow-lg">
+            <!-- H1: Main Title for Contact Page -->
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 text-center leading-tight">
+                Contact Us
+            </h1>
+
+            <!-- Introduction to Contact -->
+            <section class="mb-8 text-center">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    We'd love to hear from you! Whether you have a question, feedback, a collaboration proposal, or just want to say hello, please use the form below or reach out via the provided contact details.
+                </p>
+            </section>
+
+            <!-- Contact Information Section -->
+            <section class="mb-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                        Get in Touch Directly
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        <strong>Email:</strong> <a href="mailto:info@yourblogname.com" class="text-blue-600 hover:underline">info@yourblogname.com</a>
+                    </p>
+                    <p class="text-lg text-gray-700 mb-4">
+                        <strong>Phone:</strong> <a href="tel:+1234567890" class="text-blue-600 hover:underline">+1 (234) 567-890</a> (Optional)
+                    </p>
+                    <p class="text-lg text-gray-700 mb-4">
+                        <strong>Address:</strong> [Your Street Address]<br>
+                        [Your City, State/Province, Zip/Postal Code]<br>
+                        [Your Country] (Optional)
+                    </p>
+                    <div class="mt-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Follow Us:</h3>
+                        <div class="flex space-x-4 justify-center md:justify-start">
+                            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 text-2xl" aria-label="Twitter">
+                                <!-- Twitter Icon (SVG or Font Awesome) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.594 0-6.494 2.902-6.494 6.492 0 .509.058 1.007.147 1.49-.001.001-.001.001-.001.001-5.407-.273-10.187-2.868-13.393-6.814-.561.961-.888 2.085-.888 3.324 0 2.278 1.159 4.287 2.919 5.464-.537-.016-1.04-.165-1.487-.408v.08c0 3.144 2.235 5.766 5.193 6.363-.54.148-1.107.23-1.69.23-.417 0-.82-.041-1.215-.116.824 2.578 3.204 4.45 6.03 4.45 0-.001.001-.001.001-.001-2.259 1.777-5.109 2.846-8.216 2.846-1.066 0-2.106-.061-3.124-.183 2.909 1.85 6.388 2.934 10.12 2.934 12.148 0 18.781-10.045 18.781-18.781 0-.285-.008-.568-.02-.849 1.291-.937 2.417-2.107 3.303-3.44Z"/></svg>
+                            </a>
+                            <a href="https://linkedin.com/company/yourblogname" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 text-2xl" aria-label="LinkedIn">
+                                <!-- LinkedIn Icon (SVG or Font Awesome) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 text-2xl" aria-label="GitHub">
+                                <!-- GitHub Icon (SVG or Font Awesome) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.493.998.108-.776.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.197-6.095 8.197-11.389 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form Section -->
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                        Send Us a Message
+                    </h2>
+                    <form action="https://formspree.io/f/yourformid" method="POST" class="space-y-4">
+                        <!-- Replace "yourformid" with your actual Formspree form ID -->
+                        <div>
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                            <input type="email" id="email" name="_replyto" class="form-input" placeholder="your.email@example.com" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 text-sm font-bold mb-2">Subject:</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="Regarding your blog post on...">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-button">Send Message</button>
+                        <p class="text-sm text-gray-600 mt-2">
+                            <small>Note: This form uses <a href="https://formspree.io/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Formspree.io</a> for submission. You will need to set up a free Formspree account to receive messages.</small>
+                        </p>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Map Section (Optional) -->
+            <section class="mt-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 text-center">
+                    Find Us on the Map
+                </h2>
+                <div class="rounded-lg overflow-hidden shadow-md" style="height: 400px; width: 100%;">
+                    <!-- Replace with your actual Google Maps embed code or other map service -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.123456789!2d36.923456789!3d-1.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ5JzQ0LjMiUyAzNsKwNTUnMjcuMCJF!5e0!3m2!1sen!2ske!4v1678888888888!5m2!1sen!2ske"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Location of Your Blog Name Office">
+                    </iframe>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-2">
+                    Our office is located at [Your City, Country].
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-6 mt-8">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Your Blog Name. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="privacy-policy.html" class="text-blue-400 hover:underline">Privacy Policy</a> |
+                <a href="terms-of-service.html" class="text-blue-400 hover:underline">Terms of Service</a>
+            </p>
+            <p class="mt-2">
+                Connect with us on:
+                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline ml-2">Twitter</a> |
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline ml-2">GitHub</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
