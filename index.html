@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags for SEO -->
+    <title>Your Blog Name - High-Quality Content on [Your Niche/Topics]</title>
+    <meta name="description" content="Discover insightful articles and guides on [Your main topic 1], [Your main topic 2], and [Your main topic 3]. Your go-to resource for [Your Blog's Purpose].">
+    <meta name="keywords" content="blog, website, [Your Niche 1], [Your Niche 2], [Your specific keyword 1], [Your specific keyword 2], guides, tutorials, articles">
+
+    <!-- Open Graph / Facebook Meta Tags for Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/your-blog-repo/">
+    <meta property="og:title" content="Your Blog Name - High-Quality Content on [Your Niche/Topics]">
+    <meta property="og:description" content="Discover insightful articles and guides on [Your main topic 1], [Your main topic 2], and [Your main topic 3]. Your go-to resource for [Your Blog's Purpose].">
+    <meta property="og:image" content="https://placehold.co/1200x630/4A90E2/FFFFFF?text=Your+Blog+Homepage"> <!-- Replace with your actual homepage image URL -->
+
+    <!-- Twitter Meta Tags for Social Sharing -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourusername.github.io/your-blog-repo/">
+    <meta property="twitter:title" content="Your Blog Name - High-Quality Content on [Your Niche/Topics]">
+    <meta property="twitter:description" content="Discover insightful articles and guides on [Your main topic 1], [Your main topic 2], and [Your main topic 3]. Your go-to resource for [Your Blog's Purpose].">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/4A90E2/FFFFFF?text=Your+Blog+Homepage"> <!-- Replace with your actual homepage image URL -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/007BFF/FFFFFF?text=B" type="image/x-icon"> <!-- Replace with your actual favicon -->
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind's slate-50 */
+            color: #1e293b; /* Tailwind's slate-800 */
+        }
+        /* Custom styles for hero section background image */
+        .hero-background {
+            background-image: url('https://placehold.co/1920x600/334155/FFFFFF?text=Welcome+to+Our+Blog'); /* Replace with your actual hero image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* Custom styles for code blocks for better readability */
+        pre {
+            background-color: #1e293b; /* Tailwind's slate-800 */
+            color: #f8fafc; /* Tailwind's slate-50 */
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+        }
+        code {
+            background-color: #e2e8f0; /* Tailwind's slate-200 */
+            color: #1e293b; /* Tailwind's slate-800 */
+            padding: 0.2em 0.4em;
+            border-radius: 0.25rem;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+            font-size: 0.875em; /* Smaller for inline code */
+        }
+        pre code {
+            background-color: transparent;
+            color: inherit;
+            padding: 0;
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold rounded-md px-3 py-1 hover:bg-blue-700 transition-colors">Your Blog Name</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-blue-200 transition-colors rounded-md px-3 py-1 hover:bg-blue-700">Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-200 transition-colors rounded-md px-3 py-1 hover:bg-blue-700">About</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-200 transition-colors rounded-md px-3 py-1 hover:bg-blue-700">Contact</a></li>
+                    <li><a href="blog-post-example.html" class="hover:text-blue-200 transition-colors rounded-md px-3 py-1 hover:bg-blue-700">Blog Example</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section - Engaging and Keyword-Rich -->
+        <section class="hero-background text-white py-20 text-center shadow-inner">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight drop-shadow-lg">
+                    Welcome to Your Blog Name: Insights on [Your Primary Niche]
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 leading-relaxed drop-shadow-md">
+                    Explore our latest articles, <strong class="font-semibold">guides</strong>, and <strong class="font-semibold">tutorials</strong> on <strong class="font-semibold">[Specific Topic 1]</strong>, <strong class="font-semibold">[Specific Topic 2]</strong>, and more.
+                </p>
+                <a href="#recent-posts" class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-colors duration-300 transform hover:scale-105">
+                    Read Our Latest Posts
+                </a>
+            </div>
+        </section>
+
+        <!-- Recent Blog Posts Section -->
+        <section id="recent-posts" class="container mx-auto px-4 py-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+                Recent Blog Posts
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post Card 1 -->
+                <article class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img src="https://placehold.co/600x350/FCA5A5/FFFFFF?text=Blog+Post+1" alt="Thumbnail for Blog Post 1: Mastering Git & GitHub" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                            <a href="blog-post-example.html" class="hover:text-blue-600 transition-colors">Mastering Git & GitHub: Your Essential Guide</a>
+                        </h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Learn the fundamentals of Git and GitHub, from basic commands to advanced collaboration.
+                        </p>
+                        <div class="text-gray-600 text-xs mb-2">
+                            Published on: July 19, 2025
+                        </div>
+                        <a href="blog-post-example.html" class="text-blue-600 hover:underline text-sm font-medium">Read More &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post Card 2 -->
+                <article class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img src="https://placehold.co/600x350/FDBA74/FFFFFF?text=Blog+Post+2" alt="Thumbnail for Blog Post 2: Understanding JavaScript Closures" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                            <a href="#" class="hover:text-blue-600 transition-colors">Understanding JavaScript Closures in Depth</a>
+                        </h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            A comprehensive look at how closures work in JavaScript and their practical applications.
+                        </p>
+                        <div class="text-gray-600 text-xs mb-2">
+                            Published on: July 15, 2025
+                        </div>
+                        <a href="#" class="text-blue-600 hover:underline text-sm font-medium">Read More &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post Card 3 -->
+                <article class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img src="https://placehold.co/600x350/A78BFA/FFFFFF?text=Blog+Post+3" alt="Thumbnail for Blog Post 3: Building Responsive Layouts with Tailwind CSS" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                            <a href="#" class="hover:text-blue-600 transition-colors">Building Responsive Layouts with Tailwind CSS</a>
+                        </h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Master the art of responsive web design using Tailwind CSS utility-first framework.
+                        </p>
+                        <div class="text-gray-600 text-xs mb-2">
+                            Published on: July 10, 2025
+                        </div>
+                        <a href="#" class="text-blue-600 hover:underline text-sm font-medium">Read More &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Add more blog post cards as needed -->
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-lg shadow-md transition-colors duration-300">
+                    View All Posts &rarr;
+                </a>
+            </div>
+        </section>
+
+        <!-- Call to Action / Newsletter Section (Optional but good for engagement) -->
+        <section class="bg-blue-500 text-white py-12 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Stay Updated with Our Latest Content!</h2>
+                <p class="text-lg mb-6">
+                    Subscribe to our newsletter for exclusive insights and new article alerts.
+                </p>
+                <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email address" class="flex-grow p-3 rounded-lg border-2 border-white focus:outline-none focus:border-blue-200 text-gray-800" aria-label="Email for newsletter subscription">
+                    <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-colors duration-300">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-6 mt-8">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Your Blog Name. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="privacy-policy.html" class="text-blue-400 hover:underline">Privacy Policy</a> |
+                <a href="terms-of-service.html" class="text-blue-400 hover:underline">Terms of Service</a>
+            </p>
+            <p class="mt-2">
+                Connect with us on:
+                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline ml-2">Twitter</a> |
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline ml-2">GitHub</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
